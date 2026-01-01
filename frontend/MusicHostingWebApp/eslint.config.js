@@ -19,5 +19,11 @@ export default defineConfig([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    extends: {},
+    rules: {
+      'no-console': 'error',
+      'no-debugger': 'error',
+      'no-duplicate-case': 'error',
+    },
   },
 ])
