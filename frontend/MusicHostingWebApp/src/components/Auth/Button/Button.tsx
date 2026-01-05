@@ -1,3 +1,5 @@
+import './Button.scss';
+
 interface IButtonProps {
     label: string,
     isDisable?: boolean,

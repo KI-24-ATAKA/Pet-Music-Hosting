@@ -1,5 +1,21 @@
+@import '@style';
+
 .Button {
+  border: none;
+  background-color: $button-color;
+  padding: 16px 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  height: 56px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: 600;
   &:disabled {
-    
+
+  }
+  @media (min-width: $tablet-width){
+    max-width: 540px;
   }
 }

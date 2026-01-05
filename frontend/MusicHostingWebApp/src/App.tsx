@@ -3,7 +3,7 @@ import Button from './components/Auth/Button';
 export function App() {
 
   return (
-    <Button label='Test' onClick={() => {}}/>
+    <Button label='Test' onClick={() => {}} />
   )
 }
 
