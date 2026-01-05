@@ -1,8 +1,18 @@
-function Button ()  {
+interface IButtonProps {
+    label: string,
+    isDisable?: boolean,
+    onClick: () => void,
+};
+
+function Button (props: IButtonProps)  {
     return (
-        <div className='Button'>
-            <button className='Button__button'/>
-        </div>
+        <button 
+            className='Button'
+            disabled={props.isDisable}
+            onClick={props.onClick}
+        >
+            {props.label}
+        </button>
     );
 };
 
