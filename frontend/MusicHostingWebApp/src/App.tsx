@@ -1,5 +1,5 @@
-import Button from './components/Auth/Button';
-import InputField from './components/Auth/InputField';
+import Button from './ui/form/Button';
+import InputField from './ui/form/InputField';
 
 export function App() {
   return (

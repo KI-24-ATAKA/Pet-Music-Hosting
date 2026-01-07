@@ -27,6 +27,7 @@ function InputField(props: IInputFieldProps) {
         <div className='InputField'>
             <input 
                 className='InputField__input'
+                name={props.label}
                 ref={inputRef}
                 type={props.type}
                 placeholder={props.placeholder}

@@ -9,6 +9,7 @@ interface IButtonProps {
 function Button (props: IButtonProps)  {
     return (
         <button 
+            name={props.label}
             className='Button'
             disabled={props.isDisable}
             onClick={props.onClick}
