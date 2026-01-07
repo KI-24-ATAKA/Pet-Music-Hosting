@@ -1,4 +1,5 @@
 import React from 'react';
+import {IoMdClose} from 'react-icons/io';
 
 import './InputField.scss';
 
@@ -34,6 +35,15 @@ function InputField(props: IInputFieldProps) {
                 value={value}
                 onChange={handleChange}
             />
+            {value && (
+                <button
+                    type='button'
+                    className='InputField__remove-button'
+                    onClick={handleClear}
+                >
+                    <IoMdClose size={40} />
+                </button>
+            )}
         </div>
     );
 };

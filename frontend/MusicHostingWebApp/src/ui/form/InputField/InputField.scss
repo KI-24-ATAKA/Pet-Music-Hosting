@@ -24,6 +24,16 @@
       color: rgba($text-color, 0.2);
     }
   }
+  &__remove-button {
+    width: 24px;
+    height: 24px;
+    background: none;
+    color: $text-color;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @media (min-width: $tablet-width){
     max-width: 540px;
   }
