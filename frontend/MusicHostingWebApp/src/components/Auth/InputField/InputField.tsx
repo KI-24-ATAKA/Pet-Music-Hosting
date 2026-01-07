@@ -25,7 +25,6 @@ function InputField(props: IInputFieldProps) {
 
     return (
         <div className='InputField'>
-            <label>{props.label}</label>
             <input 
                 className='InputField__input'
                 ref={inputRef}

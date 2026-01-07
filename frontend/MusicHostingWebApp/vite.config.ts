@@ -5,13 +5,6 @@ import { resolve } from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "@/style/index.scss";`
-      }
-    }
-  },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
