@@ -41,7 +41,7 @@ function InputField(props: IInputFieldProps) {
                     className='InputField__remove-button'
                     onClick={handleClear}
                 >
-                    <IoMdClose size={40} />
+                    <IoMdClose size={20} />
                 </button>
             )}
         </div>

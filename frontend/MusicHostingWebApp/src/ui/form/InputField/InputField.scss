@@ -3,8 +3,8 @@
 .InputField {
   display: flex;
   flex-direction: row;
-  border: 1px solid rgba($text-color, 0.2);
-  background-color: rgba($text-color, 0.1);
+  border: 2px solid $transparent-white;
+  background-color: rgba(#ffffff, 0.1);
   border-radius: 12px;
   width: 100%;
   max-width: 320px;
@@ -21,12 +21,12 @@
     height: 24px;
     color: $text-color;
     &::placeholder {
-      color: rgba($text-color, 0.2);
+      color: $transparent-white;
     }
   }
   &__remove-button {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
     background: none;
     color: $text-color;
     border: none;
