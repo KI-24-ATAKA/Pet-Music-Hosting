@@ -6,12 +6,10 @@
   flex-direction: row;
   border: 2px solid $transparent-white;
   background-color: rgba(#ffffff, 0.1);
-  padding: 10px 12px;
   border-radius: 12px;
   width: 100%;
   max-width: 320px;
   height: 56px;
-  gap: 8px;
   align-items: center;
   justify-content: center;
   &__input {
@@ -37,6 +35,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+   &:focus-within {
+    border-color: $active-color;
+    border-width: 2px;
   }
   @media (min-width: $tablet-width){
     max-width: 540px;
