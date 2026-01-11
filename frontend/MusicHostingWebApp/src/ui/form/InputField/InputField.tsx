@@ -1,4 +1,5 @@
 import React from 'react';
+import InputIcon from '../InputIcon';
 import {IoMdClose} from 'react-icons/io';
 
 import './InputField.scss';
@@ -26,6 +27,7 @@ function InputField(props: IInputFieldProps) {
 
     return (
         <div className='InputField'>
+            <InputIcon iconName='mail'/>
             <input 
                 className='InputField__input'
                 name={props.label}
@@ -35,15 +37,13 @@ function InputField(props: IInputFieldProps) {
                 value={value}
                 onChange={handleChange}
             />
-            {value && (
-                <button
-                    type='button'
-                    className='InputField__remove-button'
-                    onClick={handleClear}
-                >
-                    <IoMdClose size={20} />
-                </button>
-            )}
+            <button
+                type='button'
+                className='InputField__remove-button'
+                onClick={handleClear}
+            >
+                {value && <IoMdClose size={20} />}
+            </button>
         </div>
     );
 };
