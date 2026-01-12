@@ -5,7 +5,7 @@
   box-sizing: border-box;
   flex-direction: row;
   border: 2px solid $transparent-white;
-  background-color: rgba(#ffffff, 0.1);
+  background-color: $transparent-white-background;
   border-radius: 12px;
   width: 100%;
   max-width: 320px;
@@ -38,7 +38,6 @@
   }
    &:focus-within {
     border-color: $active-color;
-    border-width: 2px;
   }
   @media (min-width: $tablet-width){
     max-width: 540px;
