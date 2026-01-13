@@ -50,7 +50,7 @@
                   </div>
                )}
                <button className='FileField__remove-button'>
-                  <IoCloseCircle fill='white' className='FileField__remove-icon' size={24}/>
+                  <IoCloseCircle className='FileField__remove-icon' size={24}/>
                </button>
             </div>
          ) : (
