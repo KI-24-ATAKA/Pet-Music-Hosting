@@ -12,7 +12,6 @@
     display: flex;
     flex-grow: 1;
     font-size: 18px;
-    font-family: inherit;
     align-items: center;
     justify-content: center;
     color: $grey;
@@ -21,6 +20,7 @@
     border: none;
     height: 100%;
     .Footer__text{
+      font-family: inherit;
       display: flex;
       flex-grow: 0;
       gap: 8px;
