@@ -23,7 +23,7 @@ function Footer() {
     };
 
     return (
-        <div 
+        <footer 
             className='Footer'
             ref={ref}
         >
@@ -63,7 +63,7 @@ function Footer() {
                     Профиль
                 </label>
             </div>
-        </div>
+        </footer>
     );
 }
 
