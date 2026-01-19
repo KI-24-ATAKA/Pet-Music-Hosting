@@ -24,13 +24,20 @@
     .Footer__text{
       font-family: inherit;
       display: flex;
+      flex-direction: column;
       flex-grow: 0;
-      gap: 8px;
+      gap: 2px;
       align-items: center;
       justify-content: center;
       &:hover {
         color: $text-color;
       }
+    }
+  }
+  @media (min-width: $tablet-width) {
+    .Footer__text {
+      flex-direction: row;
+      gap: 8px;
     }
   }
 }
