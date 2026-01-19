@@ -1,5 +1,5 @@
  import React from 'react';
- import {IoCloseCircle} from 'react-icons/io5';
+ import {IoClose} from 'react-icons/io5';
  import {MdOutlineFileUpload} from 'react-icons/md';
 
  import './FileField.scss';
@@ -49,8 +49,11 @@
                      />
                   </div>
                )}
-               <button className='FileField__remove-button'>
-                  <IoCloseCircle className='FileField__remove-icon' size={24}/>
+               <button 
+                  className='FileField__remove-button'
+                  onClick={handleRemoveFile}
+                  >
+                  <IoClose className='FileField__remove-icon' size={18}/>
                </button>
             </div>
          ) : (
