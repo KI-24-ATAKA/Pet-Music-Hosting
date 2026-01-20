@@ -18,7 +18,7 @@ interface IFileFormUI {
     ui: IFileFieldProps;
 };
 
-type IFormUI = IInputFormUI | IFileFormUI;
+export type IFormUI = IInputFormUI | IFileFormUI;
 
 
 export interface IFormProps {
