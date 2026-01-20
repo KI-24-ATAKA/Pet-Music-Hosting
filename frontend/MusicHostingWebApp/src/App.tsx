@@ -1,10 +1,10 @@
-import Layout from './components/Layout';
+import Content from './components/Content';
 import Footer from './components/Footer';
 
 export function App() {
   return (
     <div style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-      <Layout />
+      <Content />
       <Footer />
     </div>
   )

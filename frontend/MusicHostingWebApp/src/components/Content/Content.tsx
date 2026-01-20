@@ -1,10 +1,10 @@
 import Form from '../Form';
 
-import './Layout.scss';
+import './Content.scss';
 
-function Layout() {
+function Content() {
     return(
-        <div className='Layout'>
+        <div className='Content'>
             <Form
                 initialValue={
                     {
@@ -46,4 +46,4 @@ function Layout() {
     );
 };
 
-export default Layout;
+export default Content;

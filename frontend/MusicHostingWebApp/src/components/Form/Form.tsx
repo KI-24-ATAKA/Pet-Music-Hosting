@@ -2,7 +2,7 @@ import {useFormik} from 'formik';
 import Button from '../../ui/form/Button';
 import InputField from '../../ui/form/InputField';
 import FileField from '../../ui/form/FileField';
-import type {IFormProps} from '../../types/FormProps';
+import type {IFormProps} from '../../types/IFormProps';
 
 import './Form.scss';
 
