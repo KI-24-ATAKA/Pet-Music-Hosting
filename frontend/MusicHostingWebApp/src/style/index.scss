@@ -2,9 +2,14 @@
 @import './fonts.scss';
 @import './media.scss';
 
+html, #root {
+  height: 100%;
+  padding: 0;
+}
 body {
-  background-color: rgb(64, 5, 94);
   font-family: $open-sans;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
