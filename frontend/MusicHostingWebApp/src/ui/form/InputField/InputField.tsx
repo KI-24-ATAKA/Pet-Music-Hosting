@@ -1,14 +1,18 @@
 import React from 'react';
 import InputIcon from '../InputIcon';
 import {IoMdClose} from 'react-icons/io';
+import type {FormikHandlers} from 'formik';
 
 import './InputField.scss';
 
-interface IInputFieldProps {
+export interface IInputFieldProps {
     label: string,
-    value: string,
+    value?: string,
     placeholder: string,
     type: string,
+    onChange?: FormikHandlers['handleChange'],
+    onBlur?: FormikHandlers['handleBlur'],
+    setFieldValue?: (field: string, value: string) => void,
 };
 
 function InputField(props: IInputFieldProps) {

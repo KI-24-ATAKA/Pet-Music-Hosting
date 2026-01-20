@@ -4,6 +4,8 @@
 
  import './FileField.scss';
 
+ export interface IFileFieldProps {label: string};
+
  function FileField() {
    const [file, setFile] = React.useState<File | null>(null);
    const [previewUrl, setPreviewUrl] = React.useState<string | null>(null);

@@ -1,9 +1,10 @@
 import './Button.scss';
 
-interface IButtonProps {
+export interface IButtonProps {
     label: string,
     isDisable?: boolean,
-    onClick: () => void,
+    type: 'submit' | 'button',
+    onClick?: () => void,
 };
 
 function Button (props: IButtonProps)  {
@@ -12,6 +13,7 @@ function Button (props: IButtonProps)  {
             name={props.label}
             className='Button'
             disabled={props.isDisable}
+            type={props.type}
             onClick={props.onClick}
         >
             {props.label}
