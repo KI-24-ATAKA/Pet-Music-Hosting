@@ -11,13 +11,14 @@ function Form(props: IFormProps) {
         initialValues: props.initialValue,
         onSubmit: props.onSubmit,
     });
+
     return (
     <form className='Form'>
         {props.ui.map((UI) => {
             if (UI.type == 'InputField') {
                 return (
-                    <div>
-                        <label>{UI.label}</label>
+                    <div className='Form__field'>
+                        <label className='Form__label'>{UI.label}</label>
                         <InputField 
                             {...UI.ui}
                             value={formik.values[UI.ui.label]}
@@ -36,7 +37,9 @@ function Form(props: IFormProps) {
                 );
             };
         })}
-        <Button {...props.button} />
+        <div className='Form__button'>
+            <Button {...props.button} />
+        </div>
     </form>
     );
 }
