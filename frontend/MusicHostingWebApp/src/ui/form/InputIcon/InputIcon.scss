@@ -4,12 +4,11 @@
   width: 48px;
   height: 48px;
   background: none;
-  color: $transparent-white;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   &__icon {
-    color: $transparent-white;
+    color: $text-purple;
   }
 }

@@ -25,12 +25,12 @@
       border-radius: 100%;
     }
     .ProfilePage__welcome_headline {
-      color: $text-color;
+      color: $text-white;
       font-weight: 400;
       margin: 0;
     }
     .ProfilePage__login_prompt {
-      color: $transparent-white;
+      color: $text-purple;
     }
   }
 }
