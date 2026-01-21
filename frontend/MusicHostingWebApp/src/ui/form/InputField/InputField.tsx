@@ -33,8 +33,8 @@ function InputField(props: IInputFieldProps) {
         <div className='InputField'>
             <InputIcon iconName='mail'/>
             <input 
-                className='InputField__input'
                 name={props.label}
+                className='InputField__input'
                 ref={inputRef}
                 type={props.type}
                 placeholder={props.placeholder}

@@ -1,0 +1,36 @@
+@import '@style';
+
+.ProfilePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  &__form_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    align-items: center;
+    gap: 8px;
+    .ProfilePage__note_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $transparent-white;
+      width: 48px;
+      height: 48px;
+      color: $active-color;
+      border-radius: 100%;
+    }
+    .ProfilePage__welcome_headline {
+      color: $text-color;
+      font-weight: 400;
+      margin: 0;
+    }
+    .ProfilePage__login_prompt {
+      color: $transparent-white;
+    }
+  }
+}

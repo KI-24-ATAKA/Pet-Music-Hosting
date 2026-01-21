@@ -6,7 +6,7 @@
 
  export interface IFileFieldProps {label: string};
 
- function FileField() {
+ function FileField(props: IFileFieldProps) {
    const [file, setFile] = React.useState<File | null>(null);
    const [previewUrl, setPreviewUrl] = React.useState<string | null>(null);
    const ref = React.useRef<HTMLInputElement>(null);
@@ -33,6 +33,7 @@
          htmlFor='file-upload-input'
       >
          <input 
+            name={props.label}
             type='file'
             id='file-upload-input'
             style={{display: 'none'}}

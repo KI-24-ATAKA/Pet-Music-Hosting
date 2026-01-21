@@ -1,6 +1,8 @@
 import type {IRoute} from '../../types/IRoute';
 import {Routes, Route} from 'react-router-dom';
 
+import './Router.scss';
+
 interface IRouterProps {
     routes: IRoute[],
 }
