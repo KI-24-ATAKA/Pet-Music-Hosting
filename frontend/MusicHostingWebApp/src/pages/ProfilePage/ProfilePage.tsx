@@ -6,7 +6,12 @@ import {LOG_IN_FORM_CONTENT, SIGN_UP_FORM_CONTENT} from '../../constants/forms_c
 import './ProfilePage.scss';
 
 function ProfilePage() {
-    const [formContent, setFormContent] = React.useState(LOG_IN_FORM_CONTENT);
+    const [isLoginForm, setIsLoginForm] = React.useState(true);
+
+    const togleContent = () => {
+        setIsLoginForm(!isLoginForm);
+    };
+
     return (
         <div className='ProfilePage'>
             <div className='ProfilePage__form_label'>
@@ -16,7 +21,11 @@ function ProfilePage() {
                 <h1 className='ProfilePage__welcome_headline'>Добро пожаловать</h1>
                 <span className='ProfilePage__login_prompt'>Войдите, чтобы продолжить</span>
             </div>
-            <Form {...LOG_IN_FORM_CONTENT ?? SIGN_UP_FORM_CONTENT} />
+            <Form 
+                {...(isLoginForm ? LOG_IN_FORM_CONTENT : SIGN_UP_FORM_CONTENT)}
+                togleContent={togleContent}
+                textForTogleLabel={isLoginForm ? 'Нет аккаунта? Зарегистрироваться' : 'Уже есть аккаунт? Войти'}
+            />
         </div>
     );  
 };

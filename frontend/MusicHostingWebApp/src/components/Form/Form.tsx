@@ -30,8 +30,8 @@ function Form(props: IFormProps) {
                 );
             } if (UI.type == 'FileField') {
                 return (
-                    <div>
-                        <label>{UI.label}</label>
+                    <div className='Form__field'>
+                        <label className='Form__label'>{UI.label}</label>
                         <FileField label={UI.label} />
                     </div>
                 );
@@ -40,6 +40,12 @@ function Form(props: IFormProps) {
         <div className='Form__button'>
             <Button {...props.button} />
         </div>
+        <label
+            className='Form__toggle'
+            onClick={props.togleContent}
+        >
+            {props.textForTogleLabel}
+        </label>
     </form>
     );
 }

@@ -22,6 +22,8 @@ export type IFormUI = IInputFormUI | IFileFormUI;
 
 
 export interface IFormProps {
+    togleContent?: () => void,
+    textForTogleLabel: string,
     initialValue: IInitialValue,
     ui: IFormUI[],
     button: IButtonProps,

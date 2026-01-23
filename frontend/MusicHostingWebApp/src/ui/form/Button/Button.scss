@@ -8,11 +8,11 @@
   border-radius: 12px;
   width: 100%;
   max-width: 320px;
-  height: 56px;
-  font-size: 18px;
+  min-height: 56px;
   box-sizing: border-box;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: inherit;
   &:disabled {
     
   }
