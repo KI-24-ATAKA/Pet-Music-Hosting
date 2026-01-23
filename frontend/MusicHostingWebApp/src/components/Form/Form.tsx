@@ -32,7 +32,7 @@ function Form(props: IFormProps) {
                 return (
                     <div>
                         <label>{UI.label}</label>
-                        <FileField />
+                        <FileField label={UI.label} />
                     </div>
                 );
             };
