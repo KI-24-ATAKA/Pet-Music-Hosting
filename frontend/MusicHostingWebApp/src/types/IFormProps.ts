@@ -25,5 +25,6 @@ export interface IFormProps {
     initialValue: IInitialValue,
     ui: IFormUI[],
     button: IButtonProps,
+    changeFormText: string,
     onSubmit: (formData: any) => void, 
 };
