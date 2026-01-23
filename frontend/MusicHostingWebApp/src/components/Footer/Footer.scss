@@ -10,6 +10,8 @@
   background-color: black;
   max-width: 100%;
   min-height: 56px;
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(to right, black, 70%, #1c1c1c) 1;
   &__navigation {
     display: flex;
     flex-grow: 1;
