@@ -16,7 +16,7 @@ function ProfilePage() {
         <div className='ProfilePage'>
             <div className='ProfilePage__form_label'>
                 <div className='ProfilePage__note_icon'>
-                    <LuMusic2 size={24} />
+                    <LuMusic2 size={30} />
                 </div>
                 <h1 className='ProfilePage__welcome_headline'>Добро пожаловать</h1>
                 <span className='ProfilePage__login_prompt'>Войдите, чтобы продолжить</span>
