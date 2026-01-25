@@ -39,7 +39,4 @@
    &:focus-within {
     border-color: $active-color;
   }
-  @media (min-width: $tablet-width){
-    max-width: 540px;
-  }
 }
