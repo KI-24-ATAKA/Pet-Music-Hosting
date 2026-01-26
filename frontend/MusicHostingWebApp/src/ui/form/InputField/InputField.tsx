@@ -10,6 +10,7 @@ export interface IInputFieldProps {
     value?: string,
     placeholder: string,
     type: string,
+    iconName: 'lock' | 'mail' | 'user';
     onChange?: FormikHandlers['handleChange'],
     onBlur?: FormikHandlers['handleBlur'],
     setFieldValue?: (field: string, value: string) => void,
@@ -31,7 +32,7 @@ function InputField(props: IInputFieldProps) {
 
     return (
         <div className='InputField'>
-            <InputIcon iconName='mail'/>
+            <InputIcon iconName={props.iconName} />
             <input 
                 name={props.label}
                 className='InputField__input'

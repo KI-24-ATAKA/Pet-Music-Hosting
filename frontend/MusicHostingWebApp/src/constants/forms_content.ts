@@ -12,6 +12,7 @@ export const LOG_IN_FORM_CONTENT: IFormProps = {
             ui: {
                 label: 'email',
                 placeholder: 'email',
+                iconName: 'mail',
                 type: 'text',
             },
         },
@@ -21,6 +22,7 @@ export const LOG_IN_FORM_CONTENT: IFormProps = {
             ui: {
                 label: 'password',
                 placeholder: 'пароль',
+                iconName: 'lock',
                 type: 'password',
             },
         },
@@ -45,6 +47,7 @@ export const SIGN_UP_FORM_CONTENT: IFormProps = {
             ui: {
                 label: 'name',
                 placeholder: 'Ваше имя',
+                iconName: 'user',
                 type: 'text',
             },
         },
@@ -61,6 +64,7 @@ export const SIGN_UP_FORM_CONTENT: IFormProps = {
             ui: {
                 label: 'email',
                 placeholder: 'email',
+                iconName: 'mail',
                 type: 'text',
             },
         },
@@ -70,6 +74,7 @@ export const SIGN_UP_FORM_CONTENT: IFormProps = {
             ui: {
                 label: 'password',
                 placeholder: 'пароль',
+                iconName: 'lock',
                 type: 'password',
             },
         },
