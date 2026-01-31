@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './AudioPlayer.scss';
+
 function AudioPlayer() {
     const [isOpen, setIsOpen] = React.useState(false);
 
@@ -11,9 +13,14 @@ function AudioPlayer() {
             <div className='AudioPlayer__audio-controls'>
                 {/*<img />*/}
                 <div className='AudioPlayer__info'></div>
+                <button className='AudioPlayer__shake'></button>
                 <button className='AudioPlayer__open'></button>
-                <button className='AudioPlayer__add'></button>
+                <button className='AudioPlayer__skip'></button>
                 <button className='AudioPlayer__play'></button>
+                <button className='AudioPlayer__skip'></button>
+                <button className='AudioPlayer__repeat'></button>
+                <button className='AudioPlayer__add'></button>
+                <button className='AudioPlayer__volume'></button>
                 <button className='AudioPlayer__close'></button>
             </div>
         </div>
