@@ -1,5 +1,11 @@
+import AudioPlayer from '../../ui/audio/AudioPlayer';
+
 function MyMusicPage() {
-    return (<></>);
+    return (
+        <div>
+            <AudioPlayer />
+        </div>
+    );
 };
 
 export default MyMusicPage;
